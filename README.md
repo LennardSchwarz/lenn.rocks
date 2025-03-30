@@ -1,6 +1,6 @@
 # lenn.rocks
 
-[lenn.rocks](https://lenn.rocks) landing page.
+[www.lenn.rocks](https://lenn.rocks) landing page.
 
 ## Deployment Instructions
 
