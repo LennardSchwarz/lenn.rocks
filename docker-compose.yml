@@ -7,7 +7,7 @@ services:
       - external-network
     labels:
       traefik.enable: true
-      traefik.http.routers.lenn-rocks.rule: Host(`lenn.rocks`) 
+      traefik.http.routers.lenn-rocks.rule: Host(`lenn.rocks`) || Host(`www.lenn.rocks`) 
       traefik.http.services.lenn-rocks.loadbalancer.server.port: 80
 
 
