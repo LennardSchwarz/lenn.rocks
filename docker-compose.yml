@@ -4,7 +4,7 @@ services:
     pull_policy: build
     restart: unless-stopped
     networks:
-      - external-network
+      - traefik-proxy
     labels:
       traefik.enable: true
       traefik.http.routers.lenn-rocks.rule: Host(`lenn.rocks`) || Host(`www.lenn.rocks`) 
@@ -12,5 +12,5 @@ services:
 
 
 networks:
-  external-network:
+  traefik-proxy:
     external: true # hook into public network instead of creating our own
